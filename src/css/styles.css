@@ -117,7 +117,12 @@ text-align: center;
     text-align: center;
     padding: 20px;
 }
-/* .button#load-more-btn{
-  display: flex;
+#load-more-btn{
+margin-top: 32px;
+  
+}
+.main{
+display: flex;
   align-items: center;
-} */
+  flex-direction: column;
+}

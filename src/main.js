@@ -1,4 +1,4 @@
-import { fetchImages } from './pixabay-api';
+import { fetchImages } from './js/pixabay-api';
 import { renderImages, showAlert, clearGallery } from './render-functions';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';

@@ -68,4 +68,5 @@ loadMoreBtn.addEventListener('click', async () => {
   } finally {
     loader.style.display = 'none';
   }
+  
 });

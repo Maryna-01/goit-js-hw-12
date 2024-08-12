@@ -3,15 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-b3d1a2ef.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-09d7c26e.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-30575167.css">
   </head>
-  <body>
-
-
+  <body class="body">
+    <header class="header">
+      <form id="search-form">
+        <input class="input"
+          type="text"
+          name="query"
+          placeholder="Search for images..."
+          required
+        />
+        <button class="button" type="submit">Search</button>
+      </form>
+    </header>
+    <main>
+      <div class="gallery"></div>
+      <div class="loader" style="display: none">Loading...</div>
+    </main>
     
   </body>
 </html>
+

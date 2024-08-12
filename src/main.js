@@ -40,6 +40,7 @@ form.addEventListener('submit', async e => {
       simpleLightbox.refresh();
       loadMoreBtn.style.display = images.length === 15 ? 'block' : 'none';
     }
+    
   } catch (error) {
     showAlert('An error occurred while fetching images!', 'error');
   } finally {

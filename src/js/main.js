@@ -63,6 +63,7 @@ loadMoreBtn.addEventListener('click', async () => {
         'info'
       );
     }
+    
   } catch (error) {
     showAlert('An error occurred while fetching images!', 'error');
   } finally {

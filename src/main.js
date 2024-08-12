@@ -22,7 +22,6 @@ form.addEventListener('submit', async e => {
     showAlert('Please enter a search query!', 'error');
     return;
   }
-
   page = 1;
   clearGallery();
   loadMoreBtn.style.display = 'none';

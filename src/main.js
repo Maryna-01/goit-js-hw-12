@@ -56,6 +56,17 @@ loadMoreBtn.addEventListener('click', async () => {
     const images = await fetchImages(query, page);
     renderImages(images);
     simpleLightbox.refresh();
+    const { height: cardHeight } = document
+      .querySelector(`.gallery`)
+      .firstElementChild.getBoundingClientRect();
+    
+    window.scrollBy({
+      top: cardHeight * 2,
+      behavior:`smooth`,
+    });
+    
+
+
     if (images.length < 15) {
       loadMoreBtn.style.display = 'none';
       showAlert(
